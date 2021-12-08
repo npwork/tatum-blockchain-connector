@@ -355,6 +355,8 @@ components:
                     example: 5000
                   innerInstructions:
                     type: array
+                    items:
+                      type: object
                   logMessages:
                     type: array
                     items:
@@ -478,6 +480,8 @@ components:
                 example: 12345321
             rewards:
               type: array
+              items:
+                type: object
             status:
               type: object
               properties:

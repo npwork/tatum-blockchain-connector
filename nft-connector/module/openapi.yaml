@@ -61,7 +61,7 @@ paths:
           name: x-testnet-type
           required: false
           schema:
-            default: ropsten
+            default: ethereum-ropsten
             type: string
             enum:
               - ethereum-ropsten
@@ -156,7 +156,7 @@ paths:
         Second mode works without private key or signature id.
         Mint NFT requests use built-in smart contract, private key and token id which are provided by Tatum.
         You dont need to provide fromPrivateKey (or signatureId), contractAddress and tokenId fields to perform the mint NFT request.
-  
+
         Performed request without fromPrivateKey or signatureId fields will be populated with following attributes:
 
         <ul>
@@ -275,7 +275,7 @@ paths:
           name: x-testnet-type
           required: false
           schema:
-            default: ropsten
+            default: ethereum-ropsten
             type: string
             enum:
               - ethereum-ropsten
@@ -352,7 +352,7 @@ paths:
         or signatureId. PrivateKey should be used only for quick development on testnet versions of blockchain when there is no risk of losing funds. In production,
         <a href="https://github.com/tatumio/tatum-kms" target="_blank">Tatum KMS</a> should be used for the highest security standards, and signatureId should be present in the request.
         Alternatively, using the Tatum client library for supported languages.
-        Algorand is unique a way that the receiving account should be ready before sending the NFT asset. 
+        Algorand is unique a way that the receiving account should be ready before sending the NFT asset.
         To perform this, the receiving account should transfer the NFT asset with 0 amount to itself.
         During the process, it's using the same API as the main transaction: the only difference is that the "fromPrivateKey" should be the privateKey of the receiving account.
         </p>
@@ -363,7 +363,7 @@ paths:
           name: x-testnet-type
           required: false
           schema:
-            default: ropsten
+            default: ethereum-ropsten
             type: string
             enum:
               - ethereum-ropsten
@@ -443,7 +443,7 @@ paths:
           name: x-testnet-type
           required: false
           schema:
-            default: ropsten
+            default: ethereum-ropsten
             type: string
             enum:
               - ethereum-ropsten
@@ -523,7 +523,7 @@ paths:
           name: x-testnet-type
           required: false
           schema:
-            default: ropsten
+            default: ethereum-ropsten
             type: string
             enum:
               - ethereum-ropsten
@@ -599,7 +599,7 @@ paths:
           name: x-testnet-type
           required: false
           schema:
-            default: ropsten
+            default: ethereum-ropsten
             type: string
             enum:
               - ethereum-ropsten
@@ -670,7 +670,7 @@ paths:
           name: x-testnet-type
           required: false
           schema:
-            default: ropsten
+            default: ethereum-ropsten
             type: string
             enum:
               - ethereum-ropsten
@@ -930,7 +930,7 @@ paths:
           name: x-testnet-type
           required: false
           schema:
-            default: ropsten
+            default: ethereum-ropsten
             type: string
             enum:
               - ethereum-ropsten
@@ -999,7 +999,7 @@ paths:
           name: x-testnet-type
           required: false
           schema:
-            default: ropsten
+            default: ethereum-ropsten
             type: string
             enum:
               - ethereum-ropsten
@@ -1133,7 +1133,7 @@ paths:
           name: x-testnet-type
           required: false
           schema:
-            default: ropsten
+            default: ethereum-ropsten
             type: string
             enum:
               - ethereum-ropsten
@@ -1206,7 +1206,7 @@ paths:
           name: x-testnet-type
           required: false
           schema:
-            default: ropsten
+            default: ethereum-ropsten
             type: string
             enum:
               - ethereum-ropsten
@@ -1270,7 +1270,7 @@ paths:
         - description: "Token ID, required for all except SOL"
           in: path
           name: token
-          required: false
+          required: true
           schema:
             type: string
             example: "1"
@@ -1294,7 +1294,7 @@ paths:
           name: x-testnet-type
           required: false
           schema:
-            default: ropsten
+            default: ethereum-ropsten
             type: string
             enum:
               - ethereum-ropsten
@@ -1353,7 +1353,7 @@ paths:
         - description: "Token ID, required for all except SOL"
           in: path
           name: token
-          required: false
+          required: true
           schema:
             type: string
             example: "1"
@@ -1370,7 +1370,7 @@ paths:
           name: x-testnet-type
           required: false
           schema:
-            default: ropsten
+            default: ethereum-ropsten
             type: string
             enum:
               - ethereum-ropsten
@@ -4836,14 +4836,14 @@ components:
             - ONE
             - BSC
         contractAddress:
-          maxLength: 42
-          minLength: 43
+          maxLength: 43
+          minLength: 42
           description: Address of NFT token
           example: "0x687422eEA2cB73B5d3e242bA5456b782919AFc85"
           type: string
         minter:
-          maxLength: 42
-          minLength: 43
+          maxLength: 43
+          minLength: 42
           description: Address of NFT minter
           example: "0x687422eEA2cB73B5d3e242bA5456b782919AFc85"
           type: string

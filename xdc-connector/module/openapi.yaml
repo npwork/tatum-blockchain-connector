@@ -649,6 +649,8 @@ components:
           description: 'Array of uncle hashes.'
           type: array
           example: [ "0x7a44a1f56f12ae825fdc04550d7c3af2344daab987691771c06235f25fafcaa6" ]
+          items:
+            type: string
     XdcTx:
       type: object
       properties:
@@ -750,7 +752,7 @@ components:
                 description: Hash of the transaction this event was created in.
                 example: "0xe6e7340394958674cdf8606936d292f565e4ecc476aaa8b258ec8a141f7c75d7"
         logsBloom:
-          type: DATA, 256 Bytes
+          type: string
           description: Bloom filter for light clients to quickly retrieve related logs.
           example:
         root:

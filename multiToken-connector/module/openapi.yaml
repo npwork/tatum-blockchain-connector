@@ -55,7 +55,7 @@ paths:
           name: x-testnet-type
           required: false
           schema:
-            default: ropsten
+            default: ethereum-ropsten
             type: string
             enum:
               - ethereum-ropsten
@@ -142,7 +142,7 @@ paths:
           name: x-testnet-type
           required: false
           schema:
-            default: ropsten
+            default: ethereum-ropsten
             type: string
             enum:
               - ethereum-ropsten
@@ -213,7 +213,7 @@ paths:
           name: x-testnet-type
           required: false
           schema:
-            default: ropsten
+            default: ethereum-ropsten
             type: string
             enum:
               - ethereum-ropsten
@@ -285,7 +285,7 @@ paths:
           name: x-testnet-type
           required: false
           schema:
-            default: ropsten
+            default: ethereum-ropsten
             type: string
             enum:
               - ethereum-ropsten
@@ -356,7 +356,7 @@ paths:
           name: x-testnet-type
           required: false
           schema:
-            default: ropsten
+            default: ethereum-ropsten
             type: string
             enum:
               - ethereum-ropsten
@@ -429,7 +429,7 @@ paths:
           name: x-testnet-type
           required: false
           schema:
-            default: ropsten
+            default: ethereum-ropsten
             type: string
             enum:
               - ethereum-ropsten
@@ -501,7 +501,7 @@ paths:
           name: x-testnet-type
           required: false
           schema:
-            default: ropsten
+            default: ethereum-ropsten
             type: string
             enum:
               - ethereum-ropsten
@@ -572,7 +572,7 @@ paths:
           name: x-testnet-type
           required: false
           schema:
-            default: ropsten
+            default: ethereum-ropsten
             type: string
             enum:
               - ethereum-ropsten
@@ -736,7 +736,7 @@ paths:
           name: x-testnet-type
           required: false
           schema:
-            default: ropsten
+            default: ethereum-ropsten
             type: string
             enum:
               - ethereum-ropsten
@@ -803,7 +803,7 @@ paths:
           name: x-testnet-type
           required: false
           schema:
-            default: ropsten
+            default: ethereum-ropsten
             type: string
             enum:
               - ethereum-ropsten
@@ -866,7 +866,7 @@ paths:
 #          name: x-testnet-type
 #          required: false
 #          schema:
-#            default: ropsten
+#            default: ethereum-ropsten
 #            type: string
 #            enum:
 #              - ethereum-ropsten
@@ -962,7 +962,7 @@ paths:
           name: x-testnet-type
           required: false
           schema:
-            default: ropsten
+            default: ethereum-ropsten
             type: string
             enum:
               - ethereum-ropsten
@@ -1044,7 +1044,7 @@ paths:
           name: x-testnet-type
           required: false
           schema:
-            default: ropsten
+            default: ethereum-ropsten
             type: string
             enum:
               - ethereum-ropsten
@@ -1117,7 +1117,7 @@ paths:
           name: x-testnet-type
           required: false
           schema:
-            default: ropsten
+            default: ethereum-ropsten
             type: string
             enum:
               - ethereum-ropsten
@@ -1673,14 +1673,14 @@ components:
             - ONE
             - BSC
         contractAddress:
-          maxLength: 42
-          minLength: 43
+          maxLength: 43
+          minLength: 42
           description: Address of MultiToken token
           example: "0x687422eEA2cB73B5d3e242bA5456b782919AFc85"
           type: string
         minter:
-          maxLength: 42
-          minLength: 43
+          maxLength: 43
+          minLength: 42
           description: Address of MultiToken minter
           example: "0x687422eEA2cB73B5d3e242bA5456b782919AFc85"
           type: string

@@ -42,7 +42,7 @@ paths:
           name: x-testnet-type
           required: false
           schema:
-            default: ropsten
+            default: ethereum-ropsten
             type: string
             enum:
               - ethereum-ropsten
@@ -53,7 +53,7 @@ paths:
           application/json:
             schema:
               oneOf:
-                - $ref: "#/components/schemas/ChainDeployErc20"                
+                - $ref: "#/components/schemas/ChainDeployErc20"
                 - $ref: "#/components/schemas/ChainDeployErc20KMS"
                 - $ref: "#/components/schemas/ChainDeployKccErc20"
                 - $ref: "#/components/schemas/ChainDeployKccErc20KMS"
@@ -121,7 +121,7 @@ paths:
           name: x-testnet-type
           required: false
           schema:
-            default: ropsten
+            default: ethereum-ropsten
             type: string
             enum:
               - ethereum-ropsten
@@ -133,7 +133,7 @@ paths:
           application/json:
             schema:
               oneOf:
-                - $ref: "#/components/schemas/ChainMintErc20"                
+                - $ref: "#/components/schemas/ChainMintErc20"
                 - $ref: "#/components/schemas/ChainMintErc20KMS"
                 - $ref: "#/components/schemas/ChainMintKccErc20"
                 - $ref: "#/components/schemas/ChainMintKccErc20KMS"
@@ -186,7 +186,7 @@ paths:
           name: x-testnet-type
           required: false
           schema:
-            default: ropsten
+            default: ethereum-ropsten
             type: string
             enum:
               - ethereum-ropsten
@@ -251,7 +251,7 @@ paths:
           name: x-testnet-type
           required: false
           schema:
-            default: ropsten
+            default: ethereum-ropsten
             type: string
             enum:
               - ethereum-ropsten
@@ -307,7 +307,7 @@ paths:
         or signatureId. PrivateKey should be used only for quick development on testnet versions of blockchain when there is no risk of losing funds. In production,
         <a href="https://github.com/tatumio/tatum-kms" target="_blank">Tatum KMS</a> should be used for the highest security standards, and signatureId should be present in the request.
         Alternatively, using the Tatum client library for supported languages.
-        Algorand is unique a way that the receiving account should be ready before sending the FT(Erc20) asset. 
+        Algorand is unique a way that the receiving account should be ready before sending the FT(Erc20) asset.
         To perform this, the receiving account should transfer the FT(Erc20) asset with 0 amount to itself.
         During the process, it's using the same API as the main transaction: the only difference is that the "fromPrivateKey" should be the privateKey of the receiving account.
         </p>
@@ -317,7 +317,7 @@ paths:
           name: x-testnet-type
           required: false
           schema:
-            default: ropsten
+            default: ethereum-ropsten
             type: string
             enum:
               - ethereum-ropsten
@@ -490,7 +490,7 @@ paths:
           name: x-testnet-type
           required: false
           schema:
-            default: ropsten
+            default: ethereum-ropsten
             type: string
             enum:
               - ethereum-ropsten
