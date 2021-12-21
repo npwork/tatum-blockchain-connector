@@ -1,6 +1,6 @@
 {
   "name": "@tatumio/egld-connector",
-  "version": "1.1.8",
+  "version": "1.1.9",
   "description": "EGLD Connector for Tatum API",
   "license": "MIT",
   "files": [
