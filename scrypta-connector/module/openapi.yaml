@@ -112,7 +112,7 @@ paths:
           style: simple
           schema:
             type: string
-            example: 1
+            example: "1"
           description: The number of blocks preceding a particular block on a block chain.
       responses:
         200:
@@ -124,7 +124,7 @@ paths:
                   hash:
                     type: string
                     description: Block hash
-                    example: 0000000053f225e202cf27fe3046e06719efd3b31b5ab75fc5ef7f853c8b246f
+                    example: "0000000053f225e202cf27fe3046e06719efd3b31b5ab75fc5ef7f853c8b246f"
           description: OK
         400:
           <<: *API400
@@ -283,7 +283,7 @@ paths:
           required: true
           style: form
           schema:
-            type: string
+            type: number
             example: 50
           description: Max number of items per page is 50.
         - name: offset
@@ -291,7 +291,7 @@ paths:
           required: true
           style: form
           schema:
-            type: string
+            type: number
             example: 100
           description: Offset to obtain next page of the data.
         - name: address
@@ -339,7 +339,7 @@ paths:
           required: true
           style: form
           schema:
-            type: string
+            type: number
             example: 50
           description: Max number of items per page is 50.
         - name: offset
@@ -347,7 +347,7 @@ paths:
           required: true
           style: form
           schema:
-            type: string
+            type: number
             example: 100
           description: Offset to obtain next page of the data.
         - name: address

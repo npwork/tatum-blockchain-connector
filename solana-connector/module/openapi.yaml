@@ -239,6 +239,44 @@ paths:
       summary: Get Solana Transaction
       tags:
         - Blockchain / Solana
+  /v3/solana/broadcast:
+    post:
+      description: |
+        <h4>2 credits per API call.</h4><br/>
+        <p>Broadcast signed transaction to Solana blockchain. This method is used internally from Tatum KMS, Tatum Middleware or Tatum client libraries.
+        It is possible to create custom signing mechanism and use this method only for broadcasting data to the blockchian.</p>
+      operationId: SolanaBroadcast
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/BroadcastKMS"
+        required: true
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TransactionHashKMS"
+          description: OK
+        400:
+          <<: *API400
+        401:
+          <<: *API401
+        403:
+          description: Forbidden. The request is authenticated, but it is not possible to required perform operation due to logical error or invalid permissions.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error403Broadcast"
+        500:
+          <<: *API500
+      security:
+        - X-Api-Key: [ ]
+      x-code-samples:
+      summary: Broadcast signed Solana transaction
+      tags:
+        - Blockchain / Solana
   /v3/solana/transaction:
     post:
       description: |

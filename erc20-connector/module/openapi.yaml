@@ -552,7 +552,7 @@ components:
           type: string
         name:
           description: Name of the ERC20 token
-          example: My ERC20
+          example: MyERC20
           maxLength: 100
           minLength: 1
           pattern: ^[a-zA-Z0-9_]+$
@@ -669,7 +669,7 @@ components:
           type: string
         name:
           description: Name of the ERC20 token
-          example: My ERC20
+          example: MyERC20
           maxLength: 100
           minLength: 1
           pattern: ^[a-zA-Z0-9_]+$
@@ -751,7 +751,7 @@ components:
           type: string
         name:
           description: Name of the ERC20 token
-          example: My ERC20
+          example: MyERC20
           maxLength: 100
           minLength: 1
           pattern: ^[a-zA-Z0-9_]+$
@@ -832,7 +832,7 @@ components:
           type: string
         name:
           description: Name of the ERC20 token
-          example: My ERC20
+          example: MyERC20
           maxLength: 100
           minLength: 1
           pattern: ^[a-zA-Z0-9_]+$
@@ -914,7 +914,7 @@ components:
           type: string
         name:
           description: Name of the ERC20 token
-          example: My ERC20
+          example: MyERC20
           maxLength: 100
           minLength: 1
           pattern: ^[a-zA-Z0-9_]+$
@@ -986,7 +986,7 @@ components:
           type: string
         name:
           description: Name of the ERC20 token
-          example: My ERC20
+          example: MyERC20
           maxLength: 100
           minLength: 1
           pattern: ^[a-zA-Z0-9_]+$

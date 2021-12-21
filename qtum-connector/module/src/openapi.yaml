@@ -294,7 +294,7 @@ paths:
       summary: Get QTUM Transaction
       tags:
         - Blockchain / QTUM
-  /v3/qtum/transactions/address/{address}/:
+  /v3/qtum/transactions/address/{address}:
     get:
       description: "<h4>1 credit per API call.</h4><br/><p>Get QTUM paginated transactions by address.</p>"
       operationId: GetQtumPaginatedTransaction

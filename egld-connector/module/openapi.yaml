@@ -185,7 +185,6 @@ paths:
               schema:
                 type: object
                 description: Any valid response.
-                example: 77000
           description: OK
         400:
           <<: *API400

@@ -299,7 +299,7 @@ paths:
           name: roundNumber
           required: true
           schema:
-            type: string
+            type: number
             example: 16775567
       responses:
         200:
